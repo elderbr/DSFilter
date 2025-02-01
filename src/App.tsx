@@ -1,11 +1,9 @@
-function App() {
+import Menu from "./components/Menu";
 
-
+export default function App() {
   return (
     <>
-<h1>Hello</h1>
+      <Menu />
     </>
-  )
+  );
 }
-
-export default App
