@@ -6,6 +6,7 @@
   font-weight: 400;
   --bg-primary: #C2C2C2;
   --bg-secondary: #FFF;
+  --bg-tertiary: #55BC04;
   --bg-menu: #55BC04;
 
   --border-primary: #C2C2C2;
@@ -27,7 +28,13 @@ a{
 a:hover{
   cursor: pointer;
 }
+.html, body{
+  background-color: var(--bg-primary);
+}
 .container{
   width: 960px;
   margin: 0 auto;
+}
+button{
+  cursor: pointer;
 }
