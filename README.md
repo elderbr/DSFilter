@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+[DevSuperior](https://github.com/elderbr/assets/raw/main/DevSuperior/devSuperior_icon.png?raw=true)
+# DESAFIO: DSFilter 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Formação Desenvolvedor Moderno
+### Módulo: Front end
+### Capítulo: Eventos e estado global
 
-Currently, two official plugins are available:
+O sistema deverá busca os produtos filtrando pelo o preço, opcionalmente, preço mínimo e preço máximo dos produtos mínimo e máximo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Design
+Deverá entregar um projeto ReactJS conforme design Figma e caso de uso abaixo.
+[Figma](https://www.figma.com/file/s21JDtjv3cRyUfetFYAzIJ/DSFilter)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Você deve usar o script abaixo para implementar a base de dados de produtos, bem como a função que busca
+os produtos por preço:
+[Base de dados](https://gist.github.com/acenelio/fa7d03cb660b35cd9986623f1f07aeb3)
 
-- Configure the top-level `parserOptions` property like this:
+## Caso de uso
+1. [OUT] O sistema informa nome e preço de todos produtos, ordenados por preço.
+2. [IN] O usuário informa, opcionalmente, preço mínimo e preço máximo dos produtos
+3. [OUT] O sistema informa nome e preço dos produtos, ordenados por preço, conforme critérios
+Informações complementares:
+- Não precisa fazer validação de formulário (assuma que o usuário vai digitar valores válidos).
+- Não precisa implementar rotas (pode montar a tela toda no App)
+- Se o valor do preço mínimo não for informado, usar por padrão o valor 0 (zero).
+- Se o valor do preço máximo não for informado, usar por padrão o valor Number.MAX_VALUE
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
