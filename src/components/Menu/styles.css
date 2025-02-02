@@ -9,3 +9,11 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.dsf-menu h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.dsf-menu span{
+    font-size: 12px;
+    font-weight: 700;
+}
