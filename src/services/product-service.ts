@@ -5,6 +5,10 @@ export function findByPrice(min: number, max: number): ProductDTO[] {
       .filter((x) => x.price >= min && x.price <= max)
       .sort((x, y) => x.price - y.price);
   }
+
+  export function findAll() : ProductDTO[]{
+    return products;
+  }
   
   const products: ProductDTO[] = [
     {

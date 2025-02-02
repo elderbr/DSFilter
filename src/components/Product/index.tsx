@@ -1,10 +1,15 @@
+import { ProductDTO } from "../../models/ProductDTO";
 import "./styles.css";
 
-export default function Product() {
+type Props = {
+    product: ProductDTO;
+}
+
+export default function Product({product}: Props) {
   return (
     <div className="dsf-product">
-      <p>PC Gamer Pro</p>
-      <h2>R$ 1200.00</h2>
+      <p>{product.name}</p>
+      <h2>R$ {product.price.toFixed(2)}</h2>
     </div>
   );
 }
