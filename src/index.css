@@ -15,6 +15,7 @@
   --font-color-primary: #6F6F6F;
   --font-color-secondary: #55BC04;
   --font-color-tertiary: #FFF;
+  --font-color-placeholder: var(--bg-primary);
 }
 
 *{

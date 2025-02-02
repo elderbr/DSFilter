@@ -17,6 +17,9 @@
     padding: 10px;
     outline: none;
 }
+.dsf-filter-input::-webkit-input-placeholder {
+    color: var(--font-color-placeholder);
+ }
 .dsf-filter-btn{
     width: 200px;
     height: 40px;

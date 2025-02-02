@@ -1,0 +1,9 @@
+.dsf-listing{
+    background-color: var(--bg-secondary);
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    border: solid 1px var(--bg-secondary);
+}
