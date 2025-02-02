@@ -1,4 +1,4 @@
-[DevSuperior](https://github.com/elderbr/assets/raw/main/DevSuperior/devSuperior_icon.png?raw=true)
+![DevSuperior](https://github.com/elderbr/assets/raw/main/DevSuperior/devSuperior_icon.png?raw=true)
 # DESAFIO: DSFilter 
 
 ## Formação Desenvolvedor Moderno
